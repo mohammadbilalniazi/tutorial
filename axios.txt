@@ -1,0 +1,18 @@
+function get_rooms(){
+    url='/chat/get_rooms/';
+
+    axios({
+     method: "get",
+     url: url,
+    }).then(function (response) {
+      room_name=document.getElementById("room_name");
+      room_name.innerHTML="";
+      for(key in response.data['rooms']){
+        // console.log(response.data['rooms'][key]['name'])
+        var option=document.createElement("option");
+        option.text=response.data['rooms'][key]['name'];
+        option.value=response.data['rooms'][key]['name'];
+        room_name.appendChild(option);
+      }
+    });
+    }
