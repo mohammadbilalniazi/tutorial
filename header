@@ -1,0 +1,22 @@
+{data: 'test', status: 200, statusText: 'OK', headers: {…}, config: {…}, …}
+config
+: 
+{url: '/insert_language_detail/', method: 'post', data: '{"language_insert":[{"key":"preloader","language":…o"},{"key":"tbody_thafsil","language":"pashto"}]}', headers: {…}, transformRequest: Array(1), …}
+data
+: 
+"test"
+headers
+: 
+{content-length: '4', content-type: 'text/html; charset=utf-8', cross-origin-opener-policy: 'same-origin', date: 'Wed, 05 Oct 2022 07:02:04 GMT', referrer-policy: 'same-origin', …}
+request
+: 
+XMLHttpRequest {readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, onreadystatechange: ƒ, …}
+status
+: 
+200
+statusText
+: 
+"OK"
+[[Prototype]]
+: 
+Object
