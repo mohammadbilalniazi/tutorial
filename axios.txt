@@ -16,3 +16,21 @@ function get_rooms(){
       }
     });
     }
+    
+    
+    
+    
+    
+        postForm={
+            "language_insert":list_form_data
+            }
+            console.log("list_form_data=",JSON.stringify(postForm))
+            axios({
+                method:"POST",
+                url:url,
+                data:JSON.stringify(postForm),
+                headers:{"content-type":"application/json","X-CSRFToken":getCookie('csrftoken')}
+            }).then(function(response){
+                console.log(response);
+            })
+ 
